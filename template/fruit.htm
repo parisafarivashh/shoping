@@ -1,0 +1,12 @@
+{% extends 'base.htm' %}
+{% block title %} fruit  {% endblock %}
+{% block body %}
+<h3>your purchases</h3>
+<ul>
+  {% for frut in fruit %}
+  <li>{{frut.name}}</li>
+  
+  {% endfor %}
+
+</ul>
+{% endblock %}
